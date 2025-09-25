@@ -5,7 +5,6 @@
     $diferencia_b_a = [];
 if($_SERVER["REQUEST_METHOD"] == "POST"){
    
-
     $input_a = $_POST['conjunto_a'];
     $input_b = $_POST['conjunto_b'];
 
@@ -44,21 +43,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button type="submit">Calcular</button>
         <button type="submit">Limpiar</button>
     </form>
-    <?php if($_SERVER["REQUEST_METHOD"] == "POST"): ?>
-    <p>
-        <strong><?php echo "La union del conjunto a y b es: ". implode(', ',$union_a_b ) ?></strong>
-    </p>
-    <p>
-        <strong><?php echo "La intercesion del conjunto a y b es: ". implode(', ', $interc_a_b)?></strong>
-    </p>
-    <p>
-        <strong><?php echo "(a-b) = ". implode(', ', $diferencia_a_b)?></strong>
-    </p>
-    <p>
-        <strong><?php echo "(b-a) = ". implode(', ', $diferencia_b_a)?></strong>
-    </p>
+    <div class="resultado">
 
-    <?php endif; ?>
+        <?php if($_SERVER["REQUEST_METHOD"] == "POST"): ?>
+        <p>
+            <strong><?php echo "La union del conjunto a y b es: ". implode(', ',$union_a_b ) ?></strong>
+        </p>
+        <p>
+            <strong><?php echo "La intercesion del conjunto a y b es: ". implode(', ', $interc_a_b)?></strong>
+        </p>
+        <p>
+            <strong><?php echo "(a-b) = ". implode(', ', $diferencia_a_b)?></strong>
+        </p>
+        <p>
+            <strong><?php echo "(b-a) = ". implode(', ', $diferencia_b_a)?></strong>
+        </p>
+
+        <?php endif; ?>
+    </div>
 
 </body>
 </html>

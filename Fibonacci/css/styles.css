@@ -47,14 +47,3 @@ h1 {
     color: #226b90;
     margin-bottom: 20px;
 }
-.resultado {
-    margin-top: 20px;
-    background: #d6d8da;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    font-size: 1.1em;
-    color: #010203;
-}
