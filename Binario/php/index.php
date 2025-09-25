@@ -9,23 +9,24 @@
 <body>
     <div class="contenedor">
         <header>
-            Conversor a Binario
+            <h1>Conversor a binario</h1>
         </header>
         <main>
-            <h2>Ingreso de Datos</h2>
             <form method="POST" action="">
                 <div class="salida">
+                    <h2>Ingreso de Datos</h2>
                     <label for="numero">Número Decimal (0-255)</label>
                     <input type="number" id="numero" name="numero" min="0" max="255" 
                             value="<?php
                                 echo isset($_POST['numero']) ? $_POST['numero'] : '0'; 
                                 ?>" required>
                 </div>
+                <br>
                 <button type="submit" name="convertir">Convertir a Binario</button>
                 <button type="submit">Limpiar</button>
             </form>
+            <div class="contenedor-datos">
             <h2>Resultados</h2>
-            <div id="contenedor-datos">
                 <?php
                 if (isset($_POST['convertir']) && isset($_POST['numero'])) {
                     $numero = (int)$_POST['numero'];
@@ -42,6 +43,6 @@
         </main>
 
     </div>
-    
+
 </body>
 </html>
