@@ -11,7 +11,7 @@
     <form method="post">
         <label for="frase">Ingresar frase</label>
         <input type="text" id="frase" name="frase_ingresada">
-        <button>Generar acronimo</button>
+        <button type="submit">Generar acronimo</button>
     </form>
     <?php
 
