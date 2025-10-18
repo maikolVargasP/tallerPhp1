@@ -32,10 +32,6 @@ input[type="text"] {
     margin-bottom: 15px;
     font-size: 1em;
 }
-/* Para mi amigo maikol que se debe estar preguntando pa que sirve ese input type text es pa modificar
- el color de la entrada donde el usuario ingresa la frase si se fija en el html sale input type text 
- pues ahi es donde el usuario mete el texto y lo hice asi poque ya estoy modificando el form entonces para que
- no quede igual*/
 
 button {
     background-color: #4CAF50; 

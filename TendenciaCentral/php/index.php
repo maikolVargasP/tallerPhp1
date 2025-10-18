@@ -84,13 +84,11 @@
                         // 1. Contar frecuencias de los valores
                         $frecuencias = array();
                         foreach ($valores_numericos as $valor) {
-                            // Usamos round() para agrupar valores flotantes que podrían ser iguales
-                            // si solo se trabaja con enteros, esta línea no es necesaria
-                            $valor_redondeado = round($valor, 2); 
-                            if (!isset($frecuencias[$valor_redondeado])) {
-                                $frecuencias[$valor_redondeado] = 0;
+                            if (isset($frecuencias[$valor])) {
+                                $frecuencias[$valor]++;
+                            } else {
+                                $frecuencias[$valor] = 1;
                             }
-                            $frecuencias[$valor_redondeado]++;
                         }
                         
                         // 2. Verificar si el array de frecuencias no está vacío antes de usar max()
